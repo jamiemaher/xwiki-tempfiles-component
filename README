@@ -1,0 +1,18 @@
+XWiki component to provide temporary files.
+
+Intended to support modified XWikiAttachmentContent.newFileItem()
+
+eg.
+
+import com.linwoodhomes.TempFile;
+...
+
+
+   TempFile fileComponent = Utils.getComponent(TempFile.class);
+   final DiskFileItem dfi = (DiskFileItem) fileComponent.getTempFile();
+
+-------------
+
+Must be placed in expanded .war file WEB-INF/lib folder
+
+
