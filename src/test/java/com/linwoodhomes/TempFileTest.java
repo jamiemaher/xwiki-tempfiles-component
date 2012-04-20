@@ -25,6 +25,8 @@ import org.apache.commons.fileupload.FileItem;
 import org.junit.Assert;
 import org.junit.Test;
 import com.linwoodhomes.internal.DefaultTempFile;
+
+import org.xwiki.component.annotation.Component;
 import org.xwiki.test.AbstractMockingComponentTestCase;
 import org.xwiki.test.annotation.MockingRequirement;
 
@@ -33,7 +35,7 @@ import org.xwiki.test.annotation.MockingRequirement;
  */
 public class TempFileTest extends AbstractMockingComponentTestCase
 {
-    @MockingRequirement
+    @MockingRequirement(value=TempFile.class)
     private DefaultTempFile tf;
 
     @Test
